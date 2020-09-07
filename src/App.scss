@@ -1,0 +1,260 @@
+$green:#39ac37;
+body{
+  background-color: #f2f2f2;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+*>*{
+  box-sizing: border-box;
+}
+
+.home{
+  .header{
+    width: 1366px;
+    margin: 0 auto;
+    padding: 16px 10px;
+    color: #39ac37;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  main{
+    width:1366px;
+    margin:0 auto;
+  }
+
+
+.main-article{
+  display: flex;
+  height: 500px;
+  .left,.right{
+    flex:1;
+  }
+  .left{
+    flex:1;
+    .title{
+      color:$green;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 105px;
+    }
+    .subtext{
+      color:black;
+      font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 20px;
+    }
+    .input-container{
+      width: 282px;
+      border: 1px solid gray;
+      border-radius: 3px;
+      padding: 12px 13px;
+      .hash{
+        color:$green;
+        
+    font-weight: bold;
+    font-size: x-large;
+      }
+    }
+    input{
+      background-color: #f2f2f2;;
+      border: none;
+      outline: none;
+      margin-left: 4px;
+      font-size: 20px;
+    }
+    .submit{
+      color: green;
+      font-size: 28px;
+      position: absolute;
+    }
+  }
+  .right{
+    background-color: #093108;
+    background-size: 100% 100%;
+    padding: 25px 101px;
+    margin-right: -170px;
+    .text-new-event{
+      border: none;
+      color: white; 
+      font-size: 50px;
+      margin-top: 85px;
+    }
+    .btn-try-free{
+      margin-top: 30px;
+    color: white;
+    background-color: green;
+    border: none;
+    padding: 10px 37px;
+    font-size: 25px;
+    border-radius: 3px;
+    }
+  }
+}
+
+}
+
+
+.event-page{
+  background-color: #f2f2f2;
+  color:#919191;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    box-shadow: 0 0 15px black;
+    background-color:#216796
+  }
+  .navbar{
+    border-bottom: 5px solid white;
+    font-weight: bold;
+    font-size: large;
+    margin: 0 auto;
+    padding:20px;
+    width: 100px;
+    text-align: center;
+    
+  }
+  .meeting-title{
+    padding:20px;
+    position: absolute;
+    font-size:large;
+    font-weight: bold;
+  }
+
+  main{
+    width:800px;
+    margin:0 auto;
+  }
+  .input-box{
+    background-color: white;
+    padding:20px;
+    box-shadow: 2px 2px 10px #d3d3d3;
+    border-radius: 5px;
+    input{
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 18px;
+    }
+  }
+
+  .question-count{
+    display: flex;
+    align-items: center;
+  }
+
+  .question-header{
+    display: flex;
+    justify-content: space-between;
+    .sort-list{
+      span{
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 10px;
+        padding:10px;
+      }
+      .active{
+        border-bottom:2px solid $green;
+      }
+    }
+
+  }
+
+  .question-row{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    border-bottom: 1px solid #d7d7d7;
+    .question-section{
+      flex:1;
+    }
+    .avatar{
+      background-color: #f2f2f2;
+    border-radius: 50%;
+    padding: 12px 13px 8px;
+    font-size: 20px;
+    margin-right: 15px;
+    }
+    .name{
+      color:black;
+    }
+    .time{
+      font-size:12px;
+    }
+
+  }
+
+  .user-info{
+    display: flex;
+  }
+  .card-aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .menu{
+    position: relative;
+    cursor: pointer;
+    ul{
+      display: none;
+    }
+
+    &:hover ul{
+      display: initial;
+      position: absolute;
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      top: 90%;
+      right: 0%;
+      z-index: 10;
+      li{
+        background: white;
+        padding: 5px 11px;
+        border: 1px solid #f2f2f2;
+      }
+      li:hover{
+        background-color: #f2f2f2;
+      }
+    }
+  }
+  .question-text{
+    color:black;
+    margin-top: 10px;
+    margin-bottom:10px;
+    input{
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid #226795;
+      padding: 4px 5px;
+      outline:none;
+      font-size:16px;
+    }
+  }
+  .likes-count{
+    border:1px solid #d3d3d3;
+    border-radius: 20px;
+    padding: 2px 13px 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    .count{
+      margin-right: 10px;
+    }
+
+    &.selected{
+      border-color:#226795;
+      color:#226795;
+    }
+  }
+
+}
+
+
+.card{
+  background-color: white;
+  box-shadow: 2px 2px 10px #d3d3d3;
+  border-radius: 3px;
+  padding:10px;
+}
